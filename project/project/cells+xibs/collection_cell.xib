@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarkerFeltThin.ttf">
+            <string>MarkerFelt-Thin</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Col_cell" id="gTV-IL-0wX" customClass="collection_cell" customModule="project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="225" height="294"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="225" height="294"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="C1" translatesAutoresizingMaskIntoConstraints="NO" id="2X5-NR-Nwl">
+                        <rect key="frame" x="0.0" y="0.0" width="225" height="193"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="193" id="L9r-O6-WSe"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykv-12-izA">
+                        <rect key="frame" x="8" y="254" width="209" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-5c-cVg">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                <state key="normal" image="add-black"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayL-fZ-cRl">
+                                <rect key="frame" x="88.5" y="0.0" width="32" height="32"/>
+                                <state key="normal" backgroundImage="rating"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXv-Qg-QTy">
+                                <rect key="frame" x="177" y="0.0" width="32" height="32"/>
+                                <state key="normal" image="like_nonActive"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="aNg-Pr-LW7"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="fun T_shirt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w9-dq-rv4">
+                        <rect key="frame" x="20" y="213" width="185" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Vrx-Sj-uri"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                        <color key="textColor" red="0.98771339654922485" green="0.80510008335113525" blue="0.273110032081604" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.92553013563156128" green="0.92388766776952613" blue="0.76034227256247344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ykv-12-izA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="0WW-7p-EZP"/>
+                <constraint firstItem="ykv-12-izA" firstAttribute="top" secondItem="4w9-dq-rv4" secondAttribute="bottom" constant="20" id="0az-bW-eqi"/>
+                <constraint firstItem="2X5-NR-Nwl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4dn-Lh-9mn"/>
+                <constraint firstAttribute="trailing" secondItem="2X5-NR-Nwl" secondAttribute="trailing" id="La0-nU-h3d"/>
+                <constraint firstItem="4w9-dq-rv4" firstAttribute="top" secondItem="2X5-NR-Nwl" secondAttribute="bottom" constant="20" id="Mbe-mV-UaO"/>
+                <constraint firstAttribute="trailing" secondItem="ykv-12-izA" secondAttribute="trailing" constant="8" id="OFU-X6-ZL9"/>
+                <constraint firstItem="2X5-NR-Nwl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ssn-Xy-87O"/>
+                <constraint firstAttribute="bottom" secondItem="ykv-12-izA" secondAttribute="bottom" constant="8" id="Zpy-3B-96h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="225" height="294"/>
+            <connections>
+                <outlet property="ADDBTN" destination="hEo-5c-cVg" id="DBv-Ho-jKn"/>
+                <outlet property="ProdIMG" destination="2X5-NR-Nwl" id="G1V-Np-E75"/>
+                <outlet property="Prodname" destination="4w9-dq-rv4" id="N1E-Hs-XXu"/>
+                <outlet property="ReviewBTN" destination="ayL-fZ-cRl" id="hQD-qN-SuZ"/>
+                <outlet property="likeBTN" destination="vXv-Qg-QTy" id="T5o-4M-oQh"/>
+            </connections>
+            <point key="canvasLocation" x="-131.5" y="-86"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="C1" width="261" height="193"/>
+        <image name="add-black" width="32" height="32"/>
+        <image name="like_nonActive" width="32" height="32"/>
+        <image name="rating" width="32" height="32"/>
+    </resources>
+</document>
